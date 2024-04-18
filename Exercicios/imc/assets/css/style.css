@@ -80,3 +80,7 @@ form button:hover {
     background: #18b3e2;
     border-radius: 5px;
 }
+
+.resultado.erro {
+    background: #fc1111;
+}
