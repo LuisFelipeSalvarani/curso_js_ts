@@ -20,21 +20,21 @@ body {
 }
 
 .container {
-    max-width: 640px;
+    max-width: 440px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
 }
 
-form input, form label, form button {
+form input, form label, form button, .display, .btn {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     transition: all 0.3s;
 }
 
-form input {
+form input, .display {
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
@@ -42,11 +42,11 @@ form input {
     border-radius: 5px;
 }
 
-form input:focus {
+form input:focus, .display:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button {
+form button, .btn {
     border: none;
     background: var(--primary-color);
     color: #fff;
@@ -55,45 +55,12 @@ form button {
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
 }
 
-form button:hover {
+form button:hover, .btn:hover {
     background: var(--primary-color-darker);
 }
 
-#timer {
-    font-size: 72px;
-    margin: 35px 0;
-}
-
-.pausa {
-    color: #f52f2f;
-}
-
-.iniciar,
-.pausar,
-.zerar {
-    font-size: 20px;
-    color: #212121;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(19, 194, 19);
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.iniciar:hover,
-.pausar:hover,
-.zerar:hover {
-    transform: scale(1.05);
-}
-
-.pausar {
-    background-color: #f52f2f;
-}
-
-.zerar {
-    background-color: #0d9eca;
+.calculadora {
+    width: 400px;
 }

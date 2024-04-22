@@ -27,14 +27,28 @@ body {
     border-radius: 10px;
 }
 
-form input, form label, form button {
+h1 {
+    color: #212121;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input input, .input label, .input button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     transition: all 0.3s;
 }
 
-form input {
+.input button {
+    width: 50%;
+}
+
+.input input {
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
@@ -42,11 +56,11 @@ form input {
     border-radius: 5px;
 }
 
-form input:focus {
+.input input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button {
+.input button, .excluir {
     border: none;
     background: var(--primary-color);
     color: #fff;
@@ -55,45 +69,39 @@ form button {
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
 }
 
-form button:hover {
-    background: var(--primary-color-darker);
-}
-
-#timer {
-    font-size: 72px;
-    margin: 35px 0;
-}
-
-.pausa {
-    color: #f52f2f;
-}
-
-.iniciar,
-.pausar,
-.zerar {
-    font-size: 20px;
-    color: #212121;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(19, 194, 19);
-    padding: 5px 10px;
-    cursor: pointer;
+.excluir {
+    height: 30px;
+    padding: 0 10px;
+    background-color: #fff;
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
-.iniciar:hover,
-.pausar:hover,
-.zerar:hover {
+.excluir:hover {
     transform: scale(1.05);
 }
 
-.pausar {
-    background-color: #f52f2f;
+.input button:hover {
+    background: var(--primary-color-darker);
 }
 
-.zerar {
-    background-color: #0d9eca;
+.lista {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
 }
