@@ -11,7 +11,7 @@ validaCPF.prototype.valida = function() {
     if(this.cpfLimpo.length !== 11) return false;
     if(this.isSequencia()) return false;
 
-    const cpfParcial = this.cpfLimpo.slice(0, -2)
+    const cpfParcial = this.cpfLimpo.slice(0, -2);
     const digito1 = this.criaDigito(cpfParcial);
     const digito2 = this.criaDigito(cpfParcial + digito1);
     
