@@ -25,8 +25,8 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
-
 .container h1 {
     text-align: center;
 }
@@ -50,7 +50,7 @@ form input:focus {
     outline: 1px solid var(--primary-color);
 }
 
-form button {
+form button, button {
     border: none;
     background: var(--primary-color);
     color: #fff;
@@ -66,13 +66,25 @@ form button:hover {
     background: var(--primary-color-darker);
 }
 
-.cpf-gerado {
-    padding: 15px 0;
-    border-radius: 5px;
+.senha-gerada {
     font-size: 2em;
-    font-weight: bolder;
     color: #fff;
-    letter-spacing: 10px;
     text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 10px;
     background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.input {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type = checkbox] {
+    width: 20px;
+    height: 20px;
 }
