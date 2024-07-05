@@ -27,6 +27,9 @@ app.use(helmet())
 // Permite o parse de dados URL-encoded
 app.use(express.urlencoded({ extended: true }));
 
+// Permite o parse de dados JSON
+app.use(express.json())
+
 // Define a pasta pública para servir arquivos estáticos
 app.use(express.static(path.resolve(__dirname, 'public')));
 
@@ -44,6 +47,7 @@ const sessionOptions = session({
 
 // Usa as opções de sessão configuradas
 app.use(sessionOptions)
+
 // Usa o middleware flash para mensagens de sessão temporárias
 app.use(flash())
 
